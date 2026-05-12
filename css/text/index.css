@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    background-color: rgb(226, 138, 153);
+    color: rgb(81, 24, 81);
+    text-decoration-line: underline ;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+    font-family: "Kreon", serif;
+}
+
+p{
+    text-indent: 15px;
+    line-height: 1.6;
+}
