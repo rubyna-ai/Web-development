@@ -3,38 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css"/>
   <title>Welcome to My First Webpage</title>
+
+  <style>
+    .internal-box {
+      background-color: lightyellow;
+      border: 1px solid gray;
+      padding: 8px;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Welcome to My First Webpage</h1>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
 
-  <p>
-    Hi! My name is <strong>Rubina</strong> and I am a <em>web development student</em>
-    passionate about building things on the internet. I am currently learning HTML,
-    CSS, and JavaScript to become a <strong>Frontend Developer</strong>.
-  </p>
+  <div class="main-content">
 
-  <h2>My Hobbies</h2>
-  <ol>
-    <li>Travelling</li>
-    <li>Listening to Music</li>
-    <li>Exploring new places</li>
-  </ol>
+    <div class="important-box">Important</div>
 
-  <h2>My Favourite Foods</h2>
-  <ul>
-    <li>Momo</li>
-    <li>Noodles</li>
-    <li>Pizza</li>
-  </ul>
+    <h1 id="main-heading">Welcome to My First Webpage</h1>
 
-  <p>
-    I believe <u>consistent practice</u> is the key to mastering any skill.
-    <strong>Never stop learning!</strong>
-  </p>
+    <p class="internal-box">This paragraph is styled using internal CSS inside the &lt;style&gt; tag.</p>
 
-  <p><a href="about.html">Go to About Me &rarr;</a></p>
+    <p style="color: brown; font-size: 15px;">This line uses inline CSS to set color and font size.</p>
+
+    <p class="highlight">
+      Hi! My name is <strong>Rubina</strong> and I am a <em>web development student</em>
+      passionate about building things on the internet. I am currently learning HTML,
+      CSS, and JavaScript to become a <strong>Frontend Developer</strong>.
+    </p>
+
+    <h2 class="sticky-heading">My Hobbies</h2>
+
+    <div class="content-div">
+      <p>I enjoy many activities outside of coding. My favourite is <span class="highlight-span">travelling</span> to new places.</p>
+      <ol>
+        <li>Travelling</li>
+        <li>Listening to Music</li>
+        <li>Exploring new places</li>
+      </ol>
+    </div>
+
+    
+    <div class="colored-section">
+      <h2>My Favourite Foods</h2>
+      <p class="centered">Here are my top picks:</p>
+      <ul>
+        <li>Momo</li>
+        <li>Noodles</li>
+        <li>Pizza</li>
+      </ul>
+    </div>
+
+    <div class="box-demo">
+      <p>This box has: width 300px, padding 20px, border 2px solid black, margin 15px, box-sizing border-box.</p>
+    </div>
+
+    <p>
+      I believe <u>consistent practice</u> is the key to mastering any skill.
+      <span class="text-color"><strong>Never stop learning!</strong></span>
+    </p>
+
+    <p><a href="about.html">Go to About Me &rarr;</a></p>
+
+    <h2 class="sticky-heading">Why I Love Web Development</h2>
+    <p>Web development combines logic and creativity. Every project teaches me something new.</p>
+    <p>I started with just HTML and now I am learning CSS and soon JavaScript.</p>
+    <p>Building real pages like this one is the best way to practise and improve every day.</p>
+    <p>My dream is to become a professional Frontend Developer and build useful websites.</p>
+    <p>Each small step forward — a new tag, a new property — feels like a big achievement.</p>
+
+  </div>
 
 </body>
 </html>

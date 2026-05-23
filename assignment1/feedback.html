@@ -3,61 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css"/>
   <title>Feedback Form</title>
+
+  <style>
+    #feedback-title {
+      color: saddlebrown;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
 
-  <h2>Feedback Form</h2>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
 
-  <form action="#" method="post">
+  <div class="main-content">
 
-    <h3>Basic Information</h3>
+    <div class="important-box">Important</div>
 
-    <label for="fullname">Full Name:</label><br />
-    <input type="text" id="fullname" name="fullname"
-      placeholder="Enter your full name"
-      required minlength="3" maxlength="100" /><br /><br />
+    <h2 id="feedback-title">Feedback Form</h2>
 
-    <label for="email">Email Address:</label><br />
-    <input type="email" id="email" name="email"
-      placeholder="Enter your email address"
-      required /><br /><br />
+    <p style="font-size: 14px; color: gray;">This line uses inline CSS — font-size and color.</p>
 
-    <h3>Rating</h3>
+    <div class="content-div">
+      <p>Please fill in the form below. Your feedback is <span class="highlight-span">very important</span> to me.</p>
+    </div>
 
-    <label><input type="radio" name="rating" value="very_satisfied" required /> Very Satisfied</label><br />
-    <label><input type="radio" name="rating" value="satisfied" /> Satisfied</label><br />
-    <label><input type="radio" name="rating" value="neutral" /> Neutral</label><br />
-    <label><input type="radio" name="rating" value="unsatisfied" /> Unsatisfied</label><br /><br />
+    <h2 class="sticky-heading">Fill in the Form</h2>
 
-    <h3>Interests</h3>
+    <div class="colored-section">
+      <p class="centered">All fields are required unless stated otherwise.</p>
+    </div>
+    <form action="#" method="post">
 
-    <label><input type="checkbox" name="interests" value="web_dev" /> Web Development</label><br />
-    <label><input type="checkbox" name="interests" value="mobile_dev" /> Mobile Development</label><br />
-    <label><input type="checkbox" name="interests" value="ai_ml" /> AI &amp; Machine Learning</label><br /><br />
+      <h3>Basic Information</h3>
 
-    <h3>Country</h3>
+      <label for="fullname">Full Name:</label><br />
+      <input type="text" id="fullname" name="fullname"
+        placeholder="Enter your full name"
+        required minlength="3" maxlength="100" /><br /><br />
 
-    <label for="country">Select your country:</label><br />
-    <select id="country" name="country" required>
-      <option value="">-- Please select --</option>
-      <option value="nepal">Nepal</option>
-      <option value="india">India</option>
-      <option value="usa">United States</option>
-      <option value="uk">United Kingdom</option>
-      <option value="australia">Australia</option>
-    </select><br /><br />
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email"
+        placeholder="Enter your email address"
+        required /><br /><br />
 
-    <h3>Your Feedback</h3>
+      <h3>Rating</h3>
 
-    <label for="feedback">Write your feedback here:</label><br />
-    <textarea id="feedback" name="feedback" rows="5" cols="40"
-      placeholder="Write your feedback here"
-      required minlength="10" maxlength="500"></textarea><br /><br />
+      <label><input type="radio" name="rating" value="very_satisfied" required /> Very Satisfied</label><br />
+      <label><input type="radio" name="rating" value="satisfied" /> Satisfied</label><br />
+      <label><input type="radio" name="rating" value="neutral" /> Neutral</label><br />
+      <label><input type="radio" name="rating" value="unsatisfied" /> Unsatisfied</label><br /><br />
 
-    <input type="submit" value="Submit" />
+      <h3>Interests</h3>
 
-  </form>
+      <label><input type="checkbox" name="interests" value="web_dev" /> Web Development</label><br />
+      <label><input type="checkbox" name="interests" value="mobile_dev" /> Mobile Development</label><br />
+      <label><input type="checkbox" name="interests" value="ai_ml" /> AI &amp; Machine Learning</label><br /><br />
+
+      <h3>Country</h3>
+
+      <label for="country">Select your country:</label><br />
+      <select id="country" name="country" required>
+        <option value="">-- Please select --</option>
+        <option value="nepal">Nepal</option>
+        <option value="india">India</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+      </select><br /><br />
+
+      <h3>Your Feedback</h3>
+
+      <label for="feedback">Write your feedback here:</label><br />
+      <textarea id="feedback" name="feedback" rows="5" cols="40"
+        placeholder="Write your feedback here"
+        required minlength="10" maxlength="500"></textarea><br /><br />
+
+      <div class="box-demo">
+        <p>Box model demo: width 300px, padding 20px, border 2px solid black, margin 15px, box-sizing border-box.</p>
+      </div>
+      <p class="text-color">Thank you for taking the time to share your thoughts!</p>
+      <p class="highlight">Your feedback helps me improve my website.</p>
+
+      <input type="submit" value="Submit" />
+
+    </form>
+
+  </div>
 
 </body>
 </html>

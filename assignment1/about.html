@@ -3,25 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css"/>
   <title>About Me</title>
+
+  <style>
+    #about-title {
+      color: darkolivegreen;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-  <h2>About Me</h2>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
 
-  <p>
-    My name is <strong>Rubina</strong> and I am studying web development. I am
-    originally from Nepal and I enjoy creating websites that are both useful and
-    visually appealing. My goal is to become a <em>Frontend Developer</em> and
-    build beautiful, user-friendly web experiences.
-  </p>
+  <div class="main-content">
 
-  <p>
-    Outside of coding, I love travelling to new places and listening to music.
-    I believe creativity and curiosity are the best tools a developer can have.
-  </p>
+    <div class="important-box">Important</div>
 
-  <p><a href="index.html">Home</a></p>
+    <h2 id="about-title">About Me</h2>
+
+    <p style="color: darkblue; font-weight: bold;">This line uses inline CSS — color and font-weight.</p>
+
+    <p>
+      My name is <strong>Rubina</strong> and I am studying web development. I am
+      originally from Nepal and I enjoy creating websites that are both useful and
+      visually appealing. My goal is to become a <em>Frontend Developer</em> and
+      build beautiful, user-friendly web experiences.
+    </p>
+
+    <div class="content-div">
+      <p>Outside of coding, I love <span class="highlight-span">travelling</span> to new places and listening to music.
+      I believe creativity and curiosity are the best tools a developer can have.</p>
+    </div>
+
+    <h2 class="sticky-heading">My Values</h2>
+
+    <div class="colored-section">
+
+      <p class="centered">Curiosity — Consistency — Creativity</p>
+    </div>
+
+
+    <div class="box-demo">
+      <p>Box model: width 300px, padding 20px, border 2px solid black, margin 15px, box-sizing border-box.</p>
+    </div>
+    <p class="text-color">I am passionate about web development and always eager to learn more.</p>
+    <p class="highlight">I believe creativity and curiosity are the best tools a developer can have.</p>
+
+    <p><a href="index.html">Home</a></p>
+
+  </div>
 
 </body>
 </html>
